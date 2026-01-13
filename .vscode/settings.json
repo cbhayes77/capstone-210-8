@@ -23,7 +23,7 @@
   "prettier.singleQuote": false,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "es5",
-  "prettier.printWidth": 120,
+  "prettier.printWidth": 80,
   "prettier.bracketSpacing": true,
   "prettier.arrowParens": "always"
 }
