@@ -7,6 +7,10 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
+  "editor.quickSuggestions": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.parameterHints.enabled": false,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -23,7 +27,7 @@
   "prettier.singleQuote": false,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "es5",
-  "prettier.printWidth": 80,
+  "prettier.printWidth": 90,
   "prettier.bracketSpacing": true,
   "prettier.arrowParens": "always"
 }
