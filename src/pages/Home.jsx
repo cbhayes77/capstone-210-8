@@ -1,5 +1,6 @@
 import Container from "../components/ui/Container.jsx";
 import Section from "../components/ui/Section.jsx";
+import TechStack from "../components/sections/TechStack.jsx";
 import Button from "../components/ui/Button.jsx";
 import { FaGithub } from "react-icons/fa";
 import SEO from "../components/ui/SEO.jsx";
@@ -31,6 +32,8 @@ export default function Home() {
           </div>
         </Container>
       </Section>
+
+      <TechStack />
     </div>
   );
 }
