@@ -17,8 +17,40 @@ export default function Projects({
   const HeadingComponent = headingLevel;
 
   return (
-    <Section>
-      <Container>{/_ Projects will go here _/}</Container>
+    <Section aria-labelledby={headingId}>
+      <Container>
+        {/* Header */}
+        <header className="text-center">
+          <HeadingComponent id={headingId} className="heading-section">
+            {title}
+          </HeadingComponent>
+          <p className="mt-2 text-white/80">{description}</p>
+        </header>
+        {/* Grid Layout of Projects */}
+        <ul
+          className="mt-8 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          role="list"
+        >
+          {displayedProjects.map((p) => (
+            <li key={p.id}>
+              <ProjectCard
+                image={p.image}
+                title={p.title}
+                blurb={p.blurb}
+                href={p.href}
+              />
+            </li>
+          ))}
+        </ul>
+        {/* Bottom CTA - only show if there are more projects and showViewMore is true */}
+        {showViewMore && limit && projects.length > limit && (
+          <div className="mt-10 flex justify-center">
+            <Button as="a" href="/portfolio" variant="secondary">
+              View More of My Work
+            </Button>
+          </div>
+        )}
+      </Container>
     </Section>
   );
 }
