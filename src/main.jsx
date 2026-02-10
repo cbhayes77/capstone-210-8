@@ -7,8 +7,8 @@ import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import About from "./pages/About.jsx";
-/*import Resume from "./pages/Resume.jsx";
-import Contact from "./pages/Contact.jsx";*/
+import Resume from "./pages/Resume.jsx";
+/*import Contact from "./pages/Contact.jsx";*/
 import Project from "./pages/Project.jsx";
 
 import "./index.css";
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
       },
       { path: "portfolio", element: <Portfolio /> },
       { path: "about", element: <About /> },
-      /*{ path: "resume", element: <Resume /> },
-      { path: "contact", element: <Contact /> },*/
+      { path: "resume", element: <Resume /> },
+      /*{ path: "contact", element: <Contact /> },*/
       { path: "portfolio/:slug", element: <Project /> },
     ],
   },

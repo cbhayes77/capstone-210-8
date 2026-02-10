@@ -108,14 +108,12 @@ export const aboutData = {
       id: 1,
       name: "Photography",
       description: "Capturing moments and landscapes through the lens of my camera.",
-      iconId: "FaCamera",
       image: "http://picsum.photos/300?random=1",
     },
     {
       id: 2,
       name: "Auto Racing",
       description: "The thrill of speed and competition on the race track.",
-      iconId: "FaCar",
       image: "http://picsum.photos/300?random=2",
     },
     {
@@ -123,7 +121,6 @@ export const aboutData = {
       name: "Backpacking",
       description:
         "Exploring the great outdoors and discovering new trails and landscapes.",
-      iconId: "FaHiking",
       image: "http://picsum.photos/300?random=3",
     },
   ],
