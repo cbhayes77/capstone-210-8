@@ -3,7 +3,9 @@ import Section from "../components/ui/Section.jsx";
 import TechStack from "../components/sections/TechStack.jsx";
 import Button from "../components/ui/Button.jsx";
 import { FaGithub } from "react-icons/fa";
+import Projects from "../components/sections/Projects.jsx";
 import SEO from "../components/ui/SEO.jsx";
+import Testimonials from "../components/sections/Testimonials.jsx";
 
 export default function Home() {
   return (
@@ -34,6 +36,8 @@ export default function Home() {
       </Section>
 
       <TechStack />
+      <Projects limit={3} />
+      <Testimonials limit={3} />
     </div>
   );
 }

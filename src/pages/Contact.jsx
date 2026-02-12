@@ -16,7 +16,9 @@ function ContactForm() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email Address</label>
+      <label htmlFor="email" className="label-form">
+        Email Address
+      </label>
       <input
         className="w-full px-4 py-3 bg-white/5 border rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-transparent transition mb-8"
         id="email"
@@ -24,7 +26,9 @@ function ContactForm() {
         name="email"
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <label htmlFor="message">Message</label>
+      <label htmlFor="message" className="label-form">
+        Message
+      </label>
       <textarea
         className="w-full px-4 py-3 bg-white/5 border rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-transparent transition"
         id="message"
